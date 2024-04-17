@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "theme-extension-app"
+client_id = "fcf2f29b0a0753b2530e689470ffc69c"
+application_url = "https://usefully-unique-spider.ngrok-free.app"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://usefully-unique-spider.ngrok-free.app/auth/callback",
+  "https://usefully-unique-spider.ngrok-free.app/auth/shopify/callback",
+  "https://usefully-unique-spider.ngrok-free.app/api/auth/callback",
+  "https://usefully-unique-spider.ngrok-free.app/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "app-extensions-testing.myshopify.com"
