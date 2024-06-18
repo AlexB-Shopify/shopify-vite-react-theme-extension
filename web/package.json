@@ -13,7 +13,7 @@
     "node": ">=14.13.1"
   },
   "dependencies": {
-    "@prisma/client": "^4.16.2",
+    "@prisma/client": "^5.15.1",
     "@shopify/shopify-app-express": "^2.2.0",
     "@shopify/shopify-app-session-storage-prisma": "^1.0.3",
     "@shopify/shopify-app-session-storage-sqlite": "^1.2.3",
